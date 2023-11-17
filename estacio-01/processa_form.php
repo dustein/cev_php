@@ -10,7 +10,7 @@ if(strlen($_REQUEST['cpf_number']) != 11){
 	exit;
 }
 
-if(!stripos($_REQUEST['email_account'], "@") || !stripos($_REQUEST['email_cliente'],".")){
+if(!stripos($_REQUEST['email_account'], "@") || !stripos($_REQUEST['email_account'],".")){
 	echo "O campo E-mail não é válido.";
 	exit;
 }
@@ -26,9 +26,9 @@ if($_REQUEST['data_nasc'] == ""){
 //Constantes para armazenamento das variáveis de conexão.
 define('HOST', '192.168.52.128');
 define('PORT', '5432');
-define('DBNAME', 'minimundo');
+define('DBNAME', 'job_estacio');
 define('USER', 'postgres');
-define('PASSWORD', '159753');
+define('PASSWORD', 'fake123');
 
 try {
 	$dsn = new PDO("pgsql:host=". HOST . ";port=".PORT.";dbname=" . DBNAME .";user=" . USER . ";password=" . PASSWORD);

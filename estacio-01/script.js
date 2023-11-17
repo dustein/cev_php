@@ -1,23 +1,23 @@
 function validarFormulario(formulario){
-  if(formulario.nome_cliente.value === "" || formulario.nome_cliente.value === null) {
+  if(formulario.user_name.value === "" || formulario.user_name.value === null) {
     alert("O campo Nome não pode ficar vazio.");
-    formulario.nome_cliente.focus();
+    formulario.user_name.focus();
     return false;
   }
-  if(formulario.cpf_cliente.value.length != 11) {
+  if(formulario.cpf_number.value.length != 11) {
     alert("O campo CPF precisa ter 11 caracteres.");
-    formulario.cpf_cliente.focus();
+    formulario.cpf_number.focus();
     return false;
   }
   //o campo e-mail precisa ser válido, ou seja, deve : "@" e "."
-  if(formulario.email_cliente.value.indexOf("@") == -1 || formulario.email_cliente.value.indexOf(".") == -1) {
+  if(formulario.email_account.value.indexOf("@") == -1 || formulario.email_account.value.indexOf(".") == -1) {
     alert("O campo E-mail não é válido.");
-    formulario.email_cliente.focus();
+    formulario.email_account.focus();
     return false;
   }
-  if(formulario.data_nascimento_cliente.value === "" || formulario.data_nascimento_cliente.value === null) {
+  if(formulario.data_nasc.value === "" || formulario.data_nasc.value === null) {
     alert("O campo Data de Nascimento não pode ficar vazio.");
-    formulario.data_nascimento_cliente.focus();
+    formulario.data_nasc.focus();
     return false;
   }
 }
