@@ -4,37 +4,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Curos em Vídeo - 5 desafios</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header><h1>5 Desafios - Curso em Vídeo PHP Moderno</h1></header>
-  <section style="border: solid 2px; padding: 1rem;">
-    <h2>Desafio 01</h2>
-    <h3>Sucessor e Antecessor</h3>
-    <form action="sucessor_antecessor.php" method="get">
-      <label for="sucessor_antecessor">Informe número para análise</label>
-      <input type="number" name="sucessor_antecessor" id="sucessor_antecessor">
-      <input type="submit" value="Enviar">
-    </form>
-  </section>
-  <section>
-    <h2>Desafio 02</h2>
-    <h3>Sorteio de Números</h3>
+  <div class="areas">
+    <section class="desafios">
+      <h2>Desafio 01</h2>
+      <h3>Sucessor e Antecessor</h3>
+      <form action="sucessor_antecessor.php" method="get">
+        <label for="sucessor_antecessor">Informe número para análise</label>
+        <input type="number" name="sucessor_antecessor" id="sucessor_antecessor">
+        <input class="botao" type="submit" value="Enviar">
+      </form>
+    </section>
+    <section class="desafios">
+      <h2>Desafio 02</h2>
+      <h3>Sorteio Aleatório de Números</h3>
       <form action="sorteio.php" method="get">
         <label for="sorteio">Click to Sort a Number between 0 and 100: </label>
-        <input type="submit" value="GO!">
+        <input class="botao" type="submit" value="GO!">
       </form>
-  </section>
-  <section>
-    <h2>Desafio 03</h2>
-    <h3>Tema</h3>  
-  </section>
-  <section>
-    <h2>Desafio 04</h2>
-    <h3>Tema</h3>  
-  </section>
-  <section>
-    <h2>Desafio 05</h2>
-    <h3>Tema</h3>  
-  </section>
+    </section>
+    <section class="desafios">
+      <h2>Desafio 03</h2>
+      <h3>Conversor Real / Dólar</h3>
+      <form action="real_dolar.php" method="get">
+        <label for="reais">Informe valor em Reais para converter: </label>
+        <input type="number" name="reais" id="reais" max="10000"><br>
+        <small id="reaisHelp" class="form-text text-muted">Contação fixa em R$4.98/U$.</small><br>
+        <input class="botao"type="submit" value="Converter">
+
+      </form>
+    </section>
+    <section class="desafios">
+      <h2>Desafio 04</h2>
+      <h3>Tema</h3>  
+    </section>
+    <section class="desafios">
+      <h2>Desafio 05</h2>
+      <h3>Tema</h3>  
+    </section>
+  </div>
 </body>
 </html>

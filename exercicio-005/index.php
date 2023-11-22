@@ -6,8 +6,8 @@
   <title>CeV PHP - Exec 05</title>
 </head>
 <body>
-  <header><h1>Operações Aritméticas</h1></header>
-  <section>
+  <header><h1 style="color: blue; text-align: center; letter-spacing: 1.2rem;">Operações Aritméticas</h1></header>
+  <section style="font-size: 1.3rem; line-height: 2em; background-color: lightgrey; padding: 2rem; text-align: center;">
     <?php
       $absoluto = abs(-2000);
       echo "$absoluto : torna um número absoluto, então mostra o valor do próprio algarismo, independentemente se for negativo por exemplo.</br>";
