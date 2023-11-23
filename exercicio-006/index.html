@@ -15,7 +15,7 @@
       <form action="sucessor_antecessor.php" method="get">
         <label for="sucessor_antecessor">Informe número para análise</label>
         <input type="number" name="sucessor_antecessor" id="sucessor_antecessor">
-        <input class="botao" type="submit" value="Enviar">
+        <p><input class="botao" type="submit" value="Enviar"></p>
       </form>
     </section>
     <section class="desafios">
@@ -23,7 +23,7 @@
       <h3>Sorteio Aleatório de Números</h3>
       <form action="sorteio.php" method="get">
         <label for="sorteio">Click to Sort a Number between 0 and 100: </label>
-        <input class="botao" type="submit" value="GO!">
+        <p><input class="botao" type="submit" value="GO!"></p>
       </form>
     </section>
     <section class="desafios">
@@ -33,17 +33,29 @@
         <label for="reais">Informe valor em Reais para converter: </label>
         <input type="number" name="reais" id="reais" max="10000"><br>
         <small id="reaisHelp" class="form-text text-muted">Contação fixa em R$4.98/U$.</small><br>
-        <input class="botao"type="submit" value="Converter">
+        <p><input class="botao"type="submit" value="Converter"></p>
 
       </form>
     </section>
     <section class="desafios">
       <h2>Desafio 04</h2>
-      <h3>Tema</h3>  
+      <h3>Tema</h3>
+      <form action="real_dolar_dinamico.php" method="get">
+        <label for="reais_dinamico">Informe valor em Reais para converter: </label>
+        <input type="number" name="reais_dinamico" id="reais_dinamico" max="10000"><br>
+        <small id="reaisDinamicoHelp" class="form-text text-muted">Contação do dia no BACEN.</small><br>
+        <p><input class="botao"type="submit" value="Converter"></p>
+
+      </form>
     </section>
     <section class="desafios">
       <h2>Desafio 05</h2>
-      <h3>Tema</h3>  
+      <h3>Analisador de Número Real</h3>  
+      <form action="numero_real.php" method="get">
+        <label for="numero_real">Qual número a ser analisado? </label>
+        <input type="text" name="numero_real" id="numero_real">
+        <p><input class="botao" type="submit" value="Analisar"></p>
+      </form>
     </section>
   </div>
 </body>
