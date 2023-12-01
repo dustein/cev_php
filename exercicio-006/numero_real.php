@@ -14,6 +14,7 @@
       <?php
         $number = $_GET["numero_real"];
         $inteiro = intdiv($number, 1);
+        // poderia ser tb (int) $number
         $fracionario = number_format($number/1 - $inteiro, 3);
         print "Número $number. Análise:</br>
         <ul style='list-style: none;'>
