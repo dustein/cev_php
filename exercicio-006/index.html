@@ -31,7 +31,7 @@
       <h3>Conversor Real / Dólar</h3>
       <form action="real_dolar.php" method="get">
         <label for="reais">Informe valor em Reais para converter: </label>
-        <input type="number" name="reais" id="reais" max="100000"><br>
+        <input type="number" name="reais" id="reais" max="1000000" step="0.01"><br>
         <small id="reaisHelp" class="form-text text-muted">Contação fixa em R$4.98/U$.</small><br>
         <p><input class="botao"type="submit" value="Converter"></p>
 
@@ -42,7 +42,7 @@
       <h3>Tema</h3>
       <form action="real_dolar_dinamico.php" method="get">
         <label for="reais_dinamico">Informe valor em Reais para converter: </label>
-        <input type="number" name="reais_dinamico" id="reais_dinamico" max="10000"><br>
+        <input type="number" name="reais_dinamico" id="reais_dinamico" max="10000" step="0.01"><br>
         <small id="reaisDinamicoHelp" class="form-text text-muted">Contação do dia no BACEN.</small><br>
         <p><input class="botao"type="submit" value="Converter"></p>
 

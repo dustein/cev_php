@@ -12,7 +12,7 @@
   </header>
     <div class="desafios">
       <?php
-        $reais = $_GET["reais"];
+        $reais = $_GET["reais"] ?? 0;
         $cotacao = 4.98;
         $dolar = $reais / $cotacao;
         // $dolares = $reais * 4.98;
@@ -26,7 +26,7 @@
         //versao fom formatação de internacionalização das moedas e língua
         //obs nao vai fucionar no servidor local porque o php.ini vem desabilitado para essa biblioteca intl
         $padrao = numfmt_create("pt_BR", NumberFormatter::CURRENCY);
-        echo "O valor de " . numfmt_format($padrao, $reais, "BRL") . " equivale a " . numfmt_format($padrao, $dolar, "USD") . ".</br>";
+        echo "<p>O valor de " . numfmt_format($padrao, $reais, "BRL") . " equivale a " . numfmt_format($padrao, $dolar, "USD") . ".</p></br>";
 
         echo "</br><p class='botao'><a href='javascript:history.go(-1)'><<< Voltar aos Desafios</a></p>";
 
