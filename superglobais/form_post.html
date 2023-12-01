@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Post</title>
+</head>
+<body>
+  <main>
+    <h1>Form para Testar o $_POST</h1>
+      <!-- <form action="superglobais.php" method="post"> OBS podemos passar dados ao mesmo tempo pro $_GET, veja: -->
+      <form action="superglobais.php?tipo=Desenvolvedor&experiencia=Top" method="post">
+        <label for="usuario">Usuário: </label>
+        <input type="text" name="usuario" id="usuario">
+        <label for="senha">Senha: </label>
+        <input type="password" name="senha" id="senha">
+        <input type="submit" value="GO!">
+
+      </form>
+  </main>
+</body>
+</html>
