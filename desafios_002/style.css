@@ -15,16 +15,33 @@ header {
 }
 
 main {
-    background-color: gray;
+    background-color: rgb(85, 84, 84);
+    padding: 1em;
     display: flex;
-    height: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    line-height: 2rem;
 }
 
 footer {
     background-color: rgb(12, 41, 41);
     color: aliceblue;
+    width: 100%;
 }
 
 .desafio {
     border: solid;
+    padding: 0.3em;
+}
+
+.formulario {
+    background-color: cadetblue;
+    padding: 1.5em;
+}
+
+.resultado {
+    background-color: aliceblue;
+    padding: 1em;
+
 }
