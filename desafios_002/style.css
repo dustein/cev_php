@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding: 10px;
+    text-align: center;
+}
+
+main {
+    background-color: gray;
+    display: flex;
+    height: auto;
+}
+
+footer {
+    background-color: rgb(12, 41, 41);
+    color: aliceblue;
+}
+
+.desafio {
+    border: solid;
+}
