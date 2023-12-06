@@ -13,8 +13,8 @@
     </header>
     <main>
         <?php
-            $dividendo = $_GET["dividendo"] ?? 0;
-            $divisor = $_GET["divisor"] ?? 0;
+            // $dividendo = $_GET["dividendo"] ?? 0;
+            // $divisor = $_GET["divisor"] ?? 1;
             // $dividendo = 17;
             // $divisor = 2;
             // $quociente = (int) ($dividendo / $divisor);
@@ -23,26 +23,35 @@
         ?>
         <div class="main-exercicio">
             <div class="formulario">
-                <form action="<?=$_SERVER['PHP_SELF'] ?>" method="get">        
+                <form action="<?=$_SERVER['PHP_SELF']?>" method="get">        
                     <p>
                         <label for="dividendo">Dividendo :</label>
-                        <input type="number" name="dividendo" id="dividendo">
+                        <input type="number" name="dividendo" id="dividendo" min="0" required>
                     </p>
                     <p>
                         <label for="divisor">Divisor : </label>
-                        <input type="number" name="divisor" id="divisor">
+                        <input type="number" name="divisor" id="divisor" min="1" required>
                     </p>
-                    <input type="submit" value="GO!">
+                    <input type="submit" value=" GO! ">
                 </form>            
             </div>
             <div class="resultado">
                 <h3>Resultado</h3>
                 <?php 
+                    // $dividendo = $_GET["dividendo"] ?? 0;
+                    // $divisor = $_GET["divisor"] ?? 1;
+                    $dividendo = $_GET["dividendo"];
+                    $divisor = $_GET["divisor"];
                     $quociente = (int) ($dividendo / $divisor);
-                    $resto = $dividendo - ($quociente * $divisor);
-                    echo "dividendo = $dividendo. divisor = $divisor. quociente = $quociente. resto = $resto.";
+                    // $quociente = intdiv($dividendo, $divisor);
+                    // $resto = $dividendo - ($quociente * $divisor);
+                    $resto = $dividendo % $divisor;
+                    echo "<ul>";
+                    echo "<li>dividendo = $dividendo.</li>";
+                    echo "<li>divisor = $divisor.</li>";
+                    echo "<li>quociente = $quociente.</li>";
+                    echo "<li>resto = $resto.</li></ul>";
                 ?>
-                <?="a divisao deu $resto"?>
             </div>
         </div>
         
