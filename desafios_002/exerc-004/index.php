@@ -12,12 +12,6 @@
     <h2>Média Artitimética Simples e Ponderada</h2>
   </header>
   <main>
-    <?php 
-      $num1 = $_GET['num1'] ?? 0;
-      $num2 = $_GET['num2'] ?? 0;
-      $peso1 = $_GET['peso1'] ?? 0;
-      $peso2 = $_GET['peso2'] ?? 0;
-    ?>
     <div>
       <div class="formulario">
         <form action="<?=$_SERVER['PHP_SELF']?>" method="get">
@@ -42,12 +36,17 @@
       </div>
       <div class="resultado">
         <?php
-          $media_aritmetica = ($num1 + $num2) / 2;
-          $media_ponderada = ($num1*$peso1 + $num*$peso2)/($peso1+$peso2);
-          echo "A média $media_aritimetica";
+          $num1 = $_GET['num1'] ?? 1;
+          $num2 = $_GET['num2'] ?? 1;
+          $peso1 = $_GET['peso1'] ?? 1;
+          $peso2 = $_GET['peso2'] ?? 1;
+          $ma = number_format(($num1+$num2)/2, 2, ",", ".");
+          $mp = number_format(($num1*$peso1 + $num2*$peso2) / ($peso1*$peso2), 2, ",", ".");
+          echo "<ul><li>A média aritimética é $ma.</li>";
+          echo "<li>A média ponderada é $mp.</li></ul>";
         ?>
       </div>
-      <button class="botao">Voltar aos Desafios</button>
+      <button class="botao"><a href="../index.html">Voltar aos Desafios</a></button>
     </div>
   </main>
   <footer>
