@@ -35,8 +35,9 @@
           echo "Em $ano_futuro você vai fazer <strong>" . $ano_futuro-$ano_nascido . "</strong> anos."
         ?>
       </div>
+      <button class="botao"><a href="../index.html">Voltar aos Desafios</a></button>
     </div>
   </main>
-  <fnascido>@DuStein</footer>
+  <footer>@DuStein</footer>
 </body>
 </html>

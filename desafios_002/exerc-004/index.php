@@ -47,7 +47,6 @@
         ?>
       </div>
       <button class="botao"><a href="../index.html">Voltar aos Desafios</a></button>
-    </div>
   </main>
   <footer>
     @DuStein

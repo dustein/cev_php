@@ -12,15 +12,6 @@
         <h2>Anatomia de uma Divisao</h2>
     </header>
     <main>
-        <?php
-            // $dividendo = $_GET["dividendo"] ?? 0;
-            // $divisor = $_GET["divisor"] ?? 1;
-            // $dividendo = 17;
-            // $divisor = 2;
-            // $quociente = (int) ($dividendo / $divisor);
-            // $resto = $dividendo - ($quociente * $divisor);
-            // echo "dividendo = $dividendo. divisor = $divisor. quociente = $quociente. resto = $resto.";
-        ?>
         <div class="main-exercicio">
             <div class="formulario">
                 <form action="<?=$_SERVER['PHP_SELF']?>" method="get">        
@@ -53,8 +44,8 @@
                     echo "<li>resto = $resto.</li></ul>";
                 ?>
             </div>
+            <button class="botao"><a href="../index.html">Voltar aos Desafios</a></button>
         </div>
-        
     </main>
 </body>
 </html>
