@@ -18,11 +18,15 @@
       <div>
         <div class="formulario">
           <form action="<?=$_SERVER['PHP_SELF']?>" method="get">
-            <label for="v1">Valor 1: </label>
-            <input type="number" name="v1" id="v1">
-            <label for="v2">Valor 2: </label>
-            <input type="number" name="v2" id="v2">
-            <input type="submit" value="Somar -> GO!">
+            <p>
+              <label for="v1">Valor 1: </label>
+              <input type="number" name="v1" id="v1">
+            </p>
+            <p>
+              <label for="v2">Valor 2: </label>
+              <input type="number" name="v2" id="v2">
+            </p>
+            <p><input type="submit" value="Somar -> GO!"></p>
           </form>
         </div>
         <div class="resultado">
@@ -34,6 +38,6 @@
         <button class="botao"><a href="../index.html">Voltar aos Desafios</a></button>
       </div>
     </main>
-    <footer>@DuStein</footer>
+    <footer>@DuStein - <a href="https://www.dustein.com.br">dustein.com.br</a></footer>
   </body>
 </html>

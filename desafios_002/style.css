@@ -19,9 +19,6 @@ header {
 main {
     background-color: rgb(188, 185, 185);
     padding: 1em;
-    /* display: flex;
-    flex-direction: column;
-    flex-wrap: wrap; */
     text-align: center;
     line-height: 2rem;
     border: solid black;

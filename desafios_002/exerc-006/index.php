@@ -9,28 +9,42 @@
 <body>
   <header><h1>Reajuste de Precos</h1></header>
     <main>
+        <?php
+            $preco = $_GET['preco'] ?? 0;
+            $indice = $_GET['indice'] ?? 0;
+        ?>        
         <div>
             <div class="formulario">
                 <form action="" method="get">
                     <p>
                         <label for="preco">Preco do Produto: </label>
-                        <input type="number" name="preco" id="preco">
+                        <input type="number" name="preco" id="preco" value="<?=$preco?>">
                     </p>
                     <p>
-                        <label for="reajuste">Indice de Reajuste: </label>
-                        <input type="number" name="reajuste" id="reajuste">
+                        <label for="indice">Indice de Desconto (<strong><span id="porcentagem">?</span>%</strong>) : </label>
+                        <input type="range" min="0" max="100" name="indice" id="indice" oninput="mudapercent()" value="<?=$indice?>">
                     </p>
                     <p>
-                        <input type="submit" value=" GO !">
+                        <input type="submit" value="GO!">
                     </p>
                 </form>
             </div>
             <div class="resultado">
-                <p>O valor de R$ X com reajuste aplicado de X % passa a ser de R$ XZ.</p>
+                <?php
+                $calculado = $preco - ($preco * $indice/100);
+                echo "O valor de R\$$preco com reajuste de $indice% tem como resultado final R\$  $calculado.";
+                ?>
             </div>
             <button class="botao"><a href="../index.html">Voltar aos Desafios</a></button>
         </div>
     </main>
     <footer>@DuStein</footer>
+    <script>
+        mudapercent()
+
+        function mudapercent() {
+            porcentagem.innerText = indice.value;
+        }
+    </script>
 </body>
 </html>
