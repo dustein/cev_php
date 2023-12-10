@@ -7,7 +7,10 @@
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-  <header><h1>Second's Converter</h1></header>
+  <header>
+    <h1>Second's Converter</h1>
+    <h2>Exercício 007</h2>
+  </header>
   <main>
     <?php 
       $segundos = $_REQUEST['segundos'];
@@ -32,24 +35,25 @@
         $final_segundos = $segundos % 60;
         echo "Resultado da conversao dos segundos: <ul>";
         if($semana > 0) {
-          echo "<li>$semana semana(s)</li>";
+          echo "<li><strong>$semana</strong> semana(s)</li>";
         } 
         if($dia > 0) {
-          echo "<li>$dia dias(s)</li>";
+          echo "<li><strong>$dia</strong> dias(s)</li>";
         }
         if($hora > 0) {
-          echo "<li>$hora horas(s)</li>";
+          echo "<li><strong>$hora</strong> horas(s)</li>";
         }
         if ($minuto > 0) {
-          echo "<li>$minuto minuto(s)</li>";
+          echo "<li><strong>$minuto</strong> minuto(s)</li>";
         }
         if ($final_segundos > 0) {
-          echo "<li>$final_segundos segundo(s)</li>";
+          echo "<li><strong>$final_segundos</strong> segundo(s)</li>";
         }
         echo "</ul>";
         // echo "$semana semanas $dia dias $hora horas $minuto minutos e $final_segundos segundos."
         ?>
       </div>
+      <button class="botao"><a href="../index.html">Voltar aos Desafios</a></button>
     </div>
   </main>
   <footer>@DuStein</footer>
