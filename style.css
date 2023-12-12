@@ -1,0 +1,32 @@
+html {
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: black;
+  color: azure;
+}
+
+li {
+  list-style: none;
+  line-height: 3rem;
+  border: solid;
+  background-color: rgb(255, 255, 73);
+  color: black;
+}
+
+li:hover {
+  background-color: rgba(0, 0, 0, 0.034);
+  color: rgb(255, 255, 73);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  background-color: rgb(255, 255, 73);
+}
+
+footer, footer a {
+  color: cornsilk;
+}

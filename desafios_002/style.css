@@ -15,6 +15,7 @@ body {
 header {
     padding: 10px;
     text-align: center;
+    border-bottom: double 10px;
 }
 
 main {
@@ -23,6 +24,7 @@ main {
     text-align: center;
     line-height: 2rem;
     border: solid black;
+    flex-grow: 1;
 }
 
 footer {
@@ -31,6 +33,7 @@ footer {
     width: 100%;
     text-align: center;
     padding: 1rem;
+    align-self: flex-end;
 }
 
 li {
@@ -41,9 +44,8 @@ li {
     padding: 0.5rem;
     margin-top: 1rem;
     background-color: rgb(46, 46, 46);
-    color: rgb(157, 157, 224);
-    font-size: 0.8rem;
-    font-weight: bold;
+    color: rgb(193, 193, 240);
+    font-size: 1rem;
     border-radius: 15px;
 }
 
@@ -67,9 +69,10 @@ a:visited {
 .desafio {
     border: double;
     border-radius: 5%;
-    padding: 0.3em;
+    padding: 1.2em 0.8em 1.2em 0.8em;
     margin: 0.5rem;
     background-color: rgb(214, 217, 219);
+    min-width: 12em;
 }
 
 .formulario {
