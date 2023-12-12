@@ -22,20 +22,28 @@
             <label for="valor">Valor para Saque: </label>
             <input type="number" name="valor" id="valor" min=5 step="5" value="<?=$valor?>">
           </p>
-          <p>Cédulas disponíveis R$5, R$10, R$50 e R$100.</p>
+          <p><sup>* Cédulas disponíveis R$5, R$10, R$50 e R$100.</sup></p>
           <p><input type="submit" value="GO!" class="botao"></p>
         </form>
       </div>
       <div class="resultado">
         <h3>Cédulas entregues:</h3>
         <?php
-          $cem = (int) ($valor / 100);
-          $valor = $valor - $cem * 100;
-          $cinquenta = (int) ($valor / 50);
-          $valor = $valor - $cinquenta * 50;
-          $dez = (int) ($valor / 10);
-          $valor = $valor - $dez * 10;
-          $cinco = (int) ($valor / 5);
+          // $cem = (int) ($valor / 100);
+          // $valor = $valor - $cem * 100;
+          // $cinquenta = (int) ($valor / 50);
+          // $valor = $valor - $cinquenta * 50;
+          // $dez = (int) ($valor / 10);
+          // $valor = $valor - $dez * 10;
+          // $cinco = (int) ($valor / 5);
+          $resto = $valor;
+          $cem = floor($resto / 100);
+          $resto %= 100;
+          $cinquenta = floor($resto / 50);
+          $resto %= 50;
+          $dez = floor($resto / 10);
+          $resto %= 10;
+          $cinco = floor($resto / 5);
 
           echo "<ul>";
           if($cem) {
